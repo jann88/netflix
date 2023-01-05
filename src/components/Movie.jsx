@@ -8,6 +8,7 @@ function Movie ({item}) {
     const [like, setLike] = useState((false));
     const [saved, setSaved] = useState((false));
     const {user} = UserAuth();
+     
     const movieId = doc(db, 'users', `${user?.email}`)
 
     const saveShow = () => {
